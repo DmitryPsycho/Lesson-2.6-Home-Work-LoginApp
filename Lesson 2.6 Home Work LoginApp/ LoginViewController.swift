@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         showAlert(with: "Oops!", and: "Your name is User 😉")
     }
     @IBAction func passwordTip() {
-        showAlert(with: "Oops!", and: "Your name is Password 😉")
+        showAlert(with: "Oops!", and: "Your password is Password 😉")
     }
     
     @IBAction func loginButtonPressed() {
