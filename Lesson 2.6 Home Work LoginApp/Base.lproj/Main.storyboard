@@ -31,11 +31,11 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-Ra-fpu">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-Ra-fpu">
                                 <rect key="frame" x="16" y="514" width="396" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlM-LC-Ih9">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Forgot User Name?"/>
                                         <connections>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mg-GZ-K2u">
-                                        <rect key="frame" x="273" y="0.0" width="123" height="30"/>
+                                        <rect key="frame" x="218" y="0.0" width="178" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Forgot Password?"/>
                                         <connections>
@@ -59,7 +59,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="azf-Eb-XgG"/>
-                                    <segue destination="0hW-gP-9dR" kind="presentation" modalPresentationStyle="fullScreen" id="BlR-Ps-z1l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,6 +80,7 @@
                     <connections>
                         <outlet property="loginTextField" destination="CpX-iQ-WQ0" id="dL0-4C-ful"/>
                         <outlet property="passwordTextField" destination="pD5-dZ-Edu" id="vwe-L7-3Ma"/>
+                        <segue destination="0hW-gP-9dR" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="JZ1-TL-GiP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,7 +90,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="G2d-YA-Uba">
             <objects>
-                <viewController id="0hW-gP-9dR" customClass="WelcomeViewController" customModule="Lesson_2_6_Home_Work_LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="0hW-gP-9dR" customClass="WelcomeViewController" customModule="Lesson_2_6_Home_Work_LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xPm-3q-HUb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,8 +115,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTappedFor:" destination="0hW-gP-9dR" eventType="touchUpInside" id="K4x-E6-k1K"/>
-                                    <segue destination="lLQ-ZT-neW" kind="unwind" unwindAction="unwindTextFieldsFor:" id="HxH-RU-Sd4"/>
+                                    <segue destination="lLQ-ZT-neW" kind="unwind" unwindAction="unwindTextFieldsFor:" id="ljK-tL-gcJ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="rSL-Ad-x8y">

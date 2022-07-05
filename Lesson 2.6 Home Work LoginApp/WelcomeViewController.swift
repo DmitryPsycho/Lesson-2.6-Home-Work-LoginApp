@@ -18,9 +18,5 @@ class WelcomeViewController: UIViewController {
         
         userName.text = "Welcome, \(String(loginName))!"
     }
-    
-    @IBAction func buttonTapped(for segue: UIStoryboardSegue) {
-        dismiss(animated: true)
-    }
 }
 

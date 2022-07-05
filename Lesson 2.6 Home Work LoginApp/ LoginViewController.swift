@@ -12,13 +12,17 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    private let user = "User"
+    private let password = "Password"
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let settingsVC = segue.destination as? WelcomeViewController else { return }
-        settingsVC.loginName = loginTextField.text
+        settingsVC.loginName = user
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     @IBAction func userNameTip() {
@@ -29,15 +33,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed() {
-        guard loginTextField.text == "User", passwordTextField.text == "Password" else {
-            passwordTextField.text = ""
+        guard loginTextField.text == user, passwordTextField.text == password else {
             showAlert(
                 with: "Invalid login or password",
                 and: "Please, enter correct login and password!"
             )
             return
         }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
+    
     @IBAction func unwindTextFields(for segue: UIStoryboardSegue) {
         loginTextField.text = ""
         passwordTextField.text = ""
@@ -47,7 +52,9 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     private func showAlert(with title: String, and message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) {
+            _ in self.passwordTextField.text = ""
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
