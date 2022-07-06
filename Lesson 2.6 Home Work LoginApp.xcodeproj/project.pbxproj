@@ -18,7 +18,6 @@
 		4036FAF92874CE750073158C /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4036FAF82874CE750073158C /* HobbiesViewController.swift */; };
 		407599112870BDCB00EF4545 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407599102870BDCB00EF4545 /* WelcomeViewController.swift */; };
 		40A255542871D45700EC3A4A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A255532871D45700EC3A4A /* GradientView.swift */; };
-		40FAA71E28756DEF00B805E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAA71D28756DEF00B805E0 /* Person.swift */; };
 		40FAA720287580BA00B805E0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAA71F287580BA00B805E0 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		4036FAF82874CE750073158C /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
 		407599102870BDCB00EF4545 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		40A255532871D45700EC3A4A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		40FAA71D28756DEF00B805E0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		40FAA71F287580BA00B805E0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				4036FAF42874A7060073158C /* User.swift */,
-				40FAA71D28756DEF00B805E0 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,7 +202,6 @@
 				4036FAF72874C4820073158C /* InfoViewController.swift in Sources */,
 				4027062B286EE55C00165E8E /* AppDelegate.swift in Sources */,
 				4027062D286EE55C00165E8E /* SceneDelegate.swift in Sources */,
-				40FAA71E28756DEF00B805E0 /* Person.swift in Sources */,
 				4036FAF92874CE750073158C /* HobbiesViewController.swift in Sources */,
 				40FAA720287580BA00B805E0 /* TabBarViewController.swift in Sources */,
 				4036FAF52874A7060073158C /* User.swift in Sources */,

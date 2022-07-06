@@ -13,13 +13,13 @@ class InfoViewController: UIViewController {
     @IBOutlet var infoLabel: UILabel!
     @IBOutlet var jobLabel: UILabel!
     
-    private let info = User.getUser()
+    var selfInfo: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = info.personInfo.title
-        infoLabel.text = info.personInfo.info
-        jobLabel.text = info.personInfo.job
+        titleLabel.text = selfInfo.personInfo.title
+        infoLabel.text = selfInfo.personInfo.info
+        jobLabel.text = selfInfo.personInfo.job
     }
 }

@@ -8,11 +8,11 @@
 import UIKit
 import SwiftUI
 
-class AboutViewController: UIViewController {
+class HobbiesViewController: UIViewController {
     
     @IBOutlet var hobbiesLabel: UILabel!
     
-    private let hobbiesInfo = User.getUser()
+    var hobbiesInfo: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
