@@ -13,8 +13,13 @@
 		40270632286EE55C00165E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40270630286EE55C00165E8E /* Main.storyboard */; };
 		40270634286EE55D00165E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40270633286EE55D00165E8E /* Assets.xcassets */; };
 		40270637286EE55D00165E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40270635286EE55D00165E8E /* LaunchScreen.storyboard */; };
+		4036FAF52874A7060073158C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4036FAF42874A7060073158C /* User.swift */; };
+		4036FAF72874C4820073158C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4036FAF62874C4820073158C /* InfoViewController.swift */; };
+		4036FAF92874CE750073158C /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4036FAF82874CE750073158C /* HobbiesViewController.swift */; };
 		407599112870BDCB00EF4545 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407599102870BDCB00EF4545 /* WelcomeViewController.swift */; };
 		40A255542871D45700EC3A4A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A255532871D45700EC3A4A /* GradientView.swift */; };
+		40FAA71E28756DEF00B805E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAA71D28756DEF00B805E0 /* Person.swift */; };
+		40FAA720287580BA00B805E0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAA71F287580BA00B805E0 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +31,13 @@
 		40270633286EE55D00165E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40270636286EE55D00165E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40270638286EE55D00165E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4036FAF42874A7060073158C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4036FAF62874C4820073158C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		4036FAF82874CE750073158C /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
 		407599102870BDCB00EF4545 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		40A255532871D45700EC3A4A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		40FAA71D28756DEF00B805E0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		40FAA71F287580BA00B805E0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +70,62 @@
 		40270629286EE55C00165E8E /* Lesson 2.6 Home Work LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				4027062A286EE55C00165E8E /* AppDelegate.swift */,
-				4027062C286EE55C00165E8E /* SceneDelegate.swift */,
-				4027062E286EE55C00165E8E /*  LoginViewController.swift */,
-				407599102870BDCB00EF4545 /* WelcomeViewController.swift */,
-				40270630286EE55C00165E8E /* Main.storyboard */,
-				40A255532871D45700EC3A4A /* GradientView.swift */,
-				40270633286EE55D00165E8E /* Assets.xcassets */,
-				40270635286EE55D00165E8E /* LaunchScreen.storyboard */,
-				40270638286EE55D00165E8E /* Info.plist */,
+				4036FAEF2874A5290073158C /* ViewControllers */,
+				4036FAF32874A58C0073158C /* Models */,
+				4036FAF02874A54E0073158C /* StoryBoards */,
+				4036FAF12874A5670073158C /* App */,
+				4036FAF22874A5810073158C /* Resources */,
 			);
 			path = "Lesson 2.6 Home Work LoginApp";
+			sourceTree = "<group>";
+		};
+		4036FAEF2874A5290073158C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4027062E286EE55C00165E8E /*  LoginViewController.swift */,
+				407599102870BDCB00EF4545 /* WelcomeViewController.swift */,
+				4036FAF62874C4820073158C /* InfoViewController.swift */,
+				4036FAF82874CE750073158C /* HobbiesViewController.swift */,
+				40FAA71F287580BA00B805E0 /* TabBarViewController.swift */,
+				40A255532871D45700EC3A4A /* GradientView.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4036FAF02874A54E0073158C /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				40270630286EE55C00165E8E /* Main.storyboard */,
+				40270635286EE55D00165E8E /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		4036FAF12874A5670073158C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4027062A286EE55C00165E8E /* AppDelegate.swift */,
+				4027062C286EE55C00165E8E /* SceneDelegate.swift */,
+				40270638286EE55D00165E8E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4036FAF22874A5810073158C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40270633286EE55D00165E8E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4036FAF32874A58C0073158C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4036FAF42874A7060073158C /* User.swift */,
+				40FAA71D28756DEF00B805E0 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +202,13 @@
 				4027062F286EE55C00165E8E /*  LoginViewController.swift in Sources */,
 				407599112870BDCB00EF4545 /* WelcomeViewController.swift in Sources */,
 				40A255542871D45700EC3A4A /* GradientView.swift in Sources */,
+				4036FAF72874C4820073158C /* InfoViewController.swift in Sources */,
 				4027062B286EE55C00165E8E /* AppDelegate.swift in Sources */,
 				4027062D286EE55C00165E8E /* SceneDelegate.swift in Sources */,
+				40FAA71E28756DEF00B805E0 /* Person.swift in Sources */,
+				4036FAF92874CE750073158C /* HobbiesViewController.swift in Sources */,
+				40FAA720287580BA00B805E0 /* TabBarViewController.swift in Sources */,
+				4036FAF52874A7060073158C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYQWR7DN6H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lesson 2.6 Home Work LoginApp/Info.plist";
+				INFOPLIST_FILE = "Lesson 2.6 Home Work LoginApp/App/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +386,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYQWR7DN6H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lesson 2.6 Home Work LoginApp/Info.plist";
+				INFOPLIST_FILE = "Lesson 2.6 Home Work LoginApp/App/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
