@@ -18,5 +18,4 @@ class AboutViewController: UIViewController {
         super.viewDidLoad()
         hobbiesLabel.text = hobbiesInfo.personInfo.hobbies
     }
- 
 }
